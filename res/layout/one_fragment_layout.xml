@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ListView
+        android:id="@+id/contact_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:listSelector="@drawable/long_btn_pressed"
+        android:divider="@null"
+        android:scrollbars="none" 
+        />
+
+    <TextView
+        android:id="@+id/dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/zi_blue"
+        android:textSize="70sp"
+        android:visibility="invisible" />
+
+    <com.young.icontacts.view.SideBar
+        android:id="@+id/sidrbar"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_contact_keybord"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp" />
+
+    <ImageButton
+        android:id="@+id/btn_contact_keybord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_keybord_pressed" 
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

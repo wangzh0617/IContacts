@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.young.contactc.MainActivity" >
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/btn_addcontact_seleted"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_main_add"/>
+
+</menu>

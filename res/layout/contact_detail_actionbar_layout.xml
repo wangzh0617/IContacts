@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout 
+            android:id="@+id/contactDetail_actionbar_layoutback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/action_btn_background">
+        <ImageView
+            android:id="@+id/contactDetail_actionbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:src="@drawable/home_as_up_icon" />
+
+        <com.young.icontacts.view.CircleImageView
+            android:id="@+id/contactDetail_actionbar_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/missing_pic_round" />
+</LinearLayout>
+
+        <TextView
+            android:id="@+id/contactDetail_actionbar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zi_blue"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/contactDetail_actionbar_layoutback"
+             />
+
+     
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/t9bord_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_showdel" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/img_btn_add"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:src="@drawable/t9_btn_add_pressed" />
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/bar"
+                android:textSize="33sp" />
+
+            <ImageButton
+                android:id="@+id/img_btn_delete"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:src="@drawable/t9_btn_delete_pressed" 
+                android:visibility="gone"/>
+            
+            <ImageButton
+                android:id="@+id/img_btn_hide"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:src="@drawable/t9_btn_side_pressed" 
+                />
+        </LinearLayout>
+
+        <!-- line -->
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@color/bar_bg" />
+        <!-- line end -->
+
+
+        <!-- one line -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/dialNum1"
+                style="@style/T9Layout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="1" >
+
+                <TextView
+                    style="@style/T9Front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <TextView
+                    style="@style/T9ZFront"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dialNum2"
+                style="@style/T9Layout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="2" >
+
+                <TextView
+                    style="@style/T9Front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2" />
+
+                <TextView
+                    style="@style/T9ZFront"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:text="ABC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dialNum3"
+                style="@style/T9Layout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="3" >
+
+                <TextView
+                    style="@style/T9Front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3" />
+
+                <TextView
+                    style="@style/T9ZFront"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:text="DEF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- two line -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/dialNum4"
+                style="@style/T9Layout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="4" >
+
+                <TextView
+                    style="@style/T9Front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4" />
+
+                <TextView
+                    style="@style/T9ZFront"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:text="GHI " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dialNum5"
+                style="@style/T9Layout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="5" >
+
+                <TextView
+                    style="@style/T9Front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5" />
+
+                <TextView
+                    style="@style/T9ZFront"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:text="JKL" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dialNum6"
+                style="@style/T9Layout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="6" >
+
+                <TextView
+                    style="@style/T9Front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6" />
+
+                <TextView
+                    style="@style/T9ZFront"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:text="MNO" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- three line -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/dialNum7"
+                style="@style/T9Layout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="7" >
+
+                <TextView
+                    style="@style/T9Front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7" />
+
+                <TextView
+                    style="@style/T9ZFront"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:text="PQRS" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dialNum8"
+                style="@style/T9Layout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="8" >
+
+                <TextView
+                    style="@style/T9Front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8" />
+
+                <TextView
+                    style="@style/T9ZFront"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:text="TUV" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dialNum9"
+                style="@style/T9Layout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="9" >
+
+                <TextView
+                    style="@style/T9Front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9" />
+
+                <TextView
+                    style="@style/T9ZFront"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:text="WXYZ" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- four line -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/dialNum10"
+                style="@style/T9Layout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="*" >
+
+                <TextView
+                    style="@style/T9Front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*" />
+
+                <TextView
+                    style="@style/T9ZFront"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:text="WXYZ"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dialNum11"
+                style="@style/T9Layout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="0" >
+
+                <TextView
+                    style="@style/T9Front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/T9ZFront"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:text="TUV"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dialNum12"
+                style="@style/T9Layout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="#" >
+
+                <TextView
+                    style="@style/T9Front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#" />
+
+                <TextView
+                    style="@style/T9ZFront"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:text="WXYZ"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/t9bord_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/img_btn_callPhone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/t9_num_btn_pressed"
+            android:src="@drawable/dialer_dial_icon" />
+    </LinearLayout>
+
+</LinearLayout>

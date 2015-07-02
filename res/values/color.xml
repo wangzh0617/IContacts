@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- ABC paixu -->
+    <color name="bar_bg">#f0f0f6</color>
+    <color name="bar">#454545</color>
+    
+     <color name="background_tab_pressed">#6633B5E5</color>
+    
+    <color name="loginblue">#3498db</color>
+    <color name="loginblue_pressed">#1e80c2</color>
+    <color name="botton_bg">#e0e0e0</color>
+    <color name="white">#fff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="gray_dark">#C3C3C3</color>
+    <color name="gray_light">#F2F2F2</color>
+    <color name="main_bg">#edf1f4</color>
+    <color name="red">#faa4a4</color>
+    <color name="press_blue">#f0f0f6</color>
+    <color name="top_blue">#2d93e4</color>
+    <color name="zi_blue">#2e94e5</color>
+    <!-- bar line color -->
+    <color name="bar_blue">#2880C6</color>
+    <color name="new_blue">#00e5ff</color>
+    <color name="press_dark">#f4f4f4</color>
+    
+    <!-- detail color -->
+	<color name="line">#dfdfdf</color>
+	<color name="detail_number">#7e7e7e</color>
+	<color name="detail_typeaddress">#a4a4a4</color>
+	
+	<!-- menu -->
+	<color name="ldrawer_color">#2e94e5</color>
+    <color name="actionbar_color">#2e94e5</color>
+    <color name="drawer_arrow_second_color">#2e94e5</color>
+	
+</resources>
